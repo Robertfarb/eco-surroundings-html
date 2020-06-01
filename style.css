@@ -1383,3 +1383,14 @@ li.left-footer-content.mobile
         line-height: 33px;
     }
 }
+
+/* Custom Styles */
+.main-logo {
+    max-width: 275px;
+}
+
+.header-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
