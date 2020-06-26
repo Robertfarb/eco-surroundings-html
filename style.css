@@ -1394,3 +1394,7 @@ li.left-footer-content.mobile
     justify-content: space-between;
     align-items: center;
 }
+
+.portfolio-selector {
+    text-align: center;
+}

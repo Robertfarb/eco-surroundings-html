@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <link rel="shortcut icon" href="images/favicon.png" />    
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>	
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>		
         <link rel="stylesheet" type="text/css"  href='css/clear.css' />
         <link rel="stylesheet" type="text/css"  href='css/common.css' />
         <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
@@ -30,7 +30,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <img src="images/ajax-document-loader.gif" alt="Loading...">                    
+                        <img src="images/loadingIcon.png" alt="Loading...">                    
                     </td>
                 </tr>
             </tbody>
@@ -50,10 +50,9 @@
         <div class="body-wrapper">           
             <div class="content-1330 header-holder center-relative">
                 <div class="header-logo left">
-
                     <h1 class="site-title">
                         <a href="index.html">
-                            <img src="images/sunDefaultLogo.png" alt="Sun-">
+                            <img src="images/ecoSurroundingsLogo.png" alt="Sun-" class="main-logo">
                         </a>               
                     </h1>
 
@@ -64,20 +63,6 @@
                         <ul class="main-menu sm sm-clean">
                             <li>
                                 <a href="index.html">Home</a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="index-image.html">Home & Image</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-slider.html">Home & Slider</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-blog.html">Home & Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-video.html">Home & Video</a>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a href="about.html">About</a>
@@ -102,10 +87,8 @@
                         <div id="toggle">
                             <i class="fa fa-search"></i>                      
                         </div>
-                    </div>
-                    <div class="clear"></div>							
+                    </div>					
                 </div>
-                <div class="clear"></div>
             </div>
 
             <div id="content" class="site-content">
@@ -117,44 +100,91 @@
                         <div class="clear"></div>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
-                    </div>
-
-                    <div class="content-1530 center-relative block">
-                        <script>
-                            var slider1_speed = "500";
-                            var slider1_auto = "true";
-                            var slider1_pagination = "true";
-                            var slider1_hover = "true";
-                        </script>
-                        <div class="image-slider-wrapper">
-                            <ul id="slider1" class="image-slider slides center-text">
-                                <li>
-                                    <img src="demo-images/home_img_02.jpg" alt="">
-                                </li>
-                                <li>
-                                    <img src="demo-images/home_img_03.jpg" alt="">
-                                </li>
-                                <li>
-                                    <img src="demo-images/home_img_01.jpg" alt="">
-                                </li>
-                            </ul>                        
-                            <div class="slider1_pagination carousel_pagination left"></div>
+                        <div class="button-group filters-button-group">
+                            <div class="button is-checked" data-filter="*">All</div>
+                            <div class="button" data-filter=".post">Post</div>
+                            <div class="button" data-filter=".image">Image</div>
+                            <div class="button" data-filter=".video">Video</div>
+                            <div class="button" data-filter=".extern">Extern</div>                                
                         </div>
-                        <div class="clear"></div>                                                
-                    </div>
-
-                    <div class="content-1330 center-relative block">
+                        <div class="grid" id="portfolio">
+                            <div class="grid-sizer"></div>
+                            <div class="grid-item element-item p_one_third post">
+                                <a href="single-portfolio.html">
+                                    <img src="demo-images/sun_portfolio_image01.png" alt="">
+                                    <div class="portfolio-text-holder">
+                                        <p>CLOCK</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="grid-item element-item p_one_third image">
+                                <a href="demo-images/sun_portfolio_image03.png" data-rel="prettyPhoto[gallery1]">
+                                    <img src="demo-images/sun_portfolio_image03.png" alt="">
+                                    <div class="portfolio-text-holder">
+                                        <p>BAG</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="grid-item element-item p_one_third post">
+                                <a href="single-portfolio.html">
+                                    <img src="demo-images/sun_portfolio_image04.png" alt="">
+                                    <div class="portfolio-text-holder">
+                                        <p>FISH</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="grid-item element-item p_one_third video">
+                                <a href="https://www.youtube.com/watch?v=xEW_YXgRSIE" data-rel="prettyPhoto[gallery1]">
+                                    <img src="demo-images/sun_portfolio_image02.png" alt="">
+                                    <div class="portfolio-text-holder">
+                                        <p>BOTTLE</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="grid-item element-item p_one_third extern">
+                                <a href="http://drythemes.com" target="_blank">
+                                    <img src="demo-images/sun_portfolio_image05.png" alt="">
+                                    <div class="portfolio-text-holder">
+                                        <p>PAPER</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="grid-item element-item p_one_third post">
+                                <a href="single-portfolio.html">
+                                    <img src="demo-images/sun_portfolio_image07.png" alt="">
+                                    <div class="portfolio-text-holder">
+                                        <p>BLUE ICE</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
                         <div class="one_half">
-                            <strong>The Story</strong>
-                            <br>
-                            With a warning label this big, you know they gotta be fun. Bring me the forms I need to fill out to have her taken away. I decline the title of iron cook and accept the lesser title of zinc saucier, which I just made up.                            
+                            <p>
+                                <strong>The Story</strong>
+                                <br>
+                                With a warning label this big, you know they gotta be fun. Bring me the forms I need to fill out to have her taken away. I decline the title of iron cook and accept the lesser title of zinc saucier, which I just made up.
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>Curabitur felis mi, sodales id ligula ac, pulvinar condimentum nulla. Integer dignissim bibendum augue, id dapibus nisl maximus non. Pellentesque rhoncus vitae odio ut euismod.</p>
                         </div>
                         <div class="one_half last">
-                            <strong>Dreamers</strong>
-                            <br>
-                            You probably haven’t heard of them before they sold out scenester literally readymade. Trust fund Thundercats flexitarian, aesthetic Tumblr banjo freegan semiotics biodiesel master cleanse taxidermy blog.
+                            <p>
+                                <strong>Dreamers</strong>
+                                <br>
+                                You probably haven’t heard of them before they sold out scenester literally readymade. Trust fund Thundercats flexitarian, aesthetic Tumblr banjo freegan semiotics biodiesel master cleanse taxidermy blog.
+                            </p>
+                            <p>&nbsp;</p>                            
+                            <div class="text-left">
+                                <a href="portfolio.html" target="_self" class="button ">More…</a>
+                            </div>                        
                         </div>
                         <div class="clear"></div>
                     </div>
