@@ -1386,7 +1386,7 @@ li.left-footer-content.mobile
 
 /* Custom Styles */
 .main-logo {
-    max-width: 275px;
+    max-width: 350px;
 }
 
 .header-holder {
@@ -1397,4 +1397,8 @@ li.left-footer-content.mobile
 
 .portfolio-selector {
     text-align: center;
+}
+
+.site-content {
+    padding-bottom: 200px;
 }
