@@ -628,14 +628,14 @@ ul.archive-list li span
 {
     display: block;
     width: 100%;
-    height: auto;
-    max-height: none;
+    height: 300px;
+    max-height: 300px;
     max-width: none;
 }
 
 .grid-sizer, .grid-item 
 {
-    width: 443px;
+    width: 33%;
 }
 
 .grid-item.p_two_third
