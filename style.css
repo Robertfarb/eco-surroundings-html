@@ -1403,3 +1403,13 @@ li.left-footer-content.mobile
 .site-content {
     padding-bottom: 200px;
 }
+
+.image-slider-margin {
+    margin-bottom: 125px;
+}
+
+@media all and (max-width: 768px) {
+    .main-logo {
+        max-width: 175px;
+    }
+}
