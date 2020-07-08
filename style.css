@@ -1404,12 +1404,15 @@ li.left-footer-content.mobile
     padding-bottom: 200px;
 }
 
-.image-slider-margin {
-    margin-bottom: 125px;
-}
-
 @media all and (max-width: 768px) {
     .main-logo {
         max-width: 175px;
+    }
+
+    .portfolio-text-holder {
+        background: rgba(255, 255, 255, 0.68);
+        display: block;
+        font-size: 32px;
+        font-weight: 800;
     }
 }
